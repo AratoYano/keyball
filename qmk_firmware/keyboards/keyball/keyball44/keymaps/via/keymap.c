@@ -68,4 +68,12 @@ void oledkit_render_info_user(void) {
     keyball_oled_render_ballinfo();
     keyball_oled_render_layerinfo();
 }
+
+#ifdef COMBO_ENABLE
+// Remapで設定する場合でも、ビルドを通すために最低1つの定義が必要です
+const uint16_t PROGMEM dummy_combo[] = {KC_NO, KC_NO, COMBO_END};
+combo_t key_combos[] = {
+    COMBO(dummy_combo, KC_NO),
+};
+#endif
 #endif
