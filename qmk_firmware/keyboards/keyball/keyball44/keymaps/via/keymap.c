@@ -59,13 +59,15 @@ const uint16_t PROGMEM ui_macro1_combo[]     = {KC_U, KC_I, COMBO_END};
 const uint16_t PROGMEM io_macro2_combo[]     = {KC_I, KC_O, COMBO_END};
 const uint16_t PROGMEM mcomma_slash_combo[]  = {KC_M, KC_COMM, COMBO_END};
 const uint16_t PROGMEM op_macro3_combo[]     = {KC_O, KC_P, COMBO_END};
+const uint16_t PROGMEM lenter_scln_combo[]   = {KC_L, LT(2,KC_ENT), COMBO_END};
 
 combo_t key_combos[] = {
-    COMBO(nm_macro0_combo,     QK_MACRO_0), // Remap Macro 0
-    COMBO(ui_macro1_combo,     QK_MACRO_1), // Remap Macro 1
-    COMBO(io_macro2_combo,     QK_MACRO_2), // Remap Macro 2
-    COMBO(mcomma_slash_combo,  KC_SLSH),    // "/"
-    COMBO(op_macro3_combo,     QK_MACRO_3), // Remap Macro 3
+    COMBO(nm_macro0_combo,     QK_MACRO_0),
+    COMBO(ui_macro1_combo,     QK_MACRO_1),
+    COMBO(io_macro2_combo,     QK_MACRO_2),
+    COMBO(mcomma_slash_combo,  KC_SLSH),
+    COMBO(op_macro3_combo,     QK_MACRO_3),
+    COMBO(lenter_scln_combo,   KC_SCLN), // ";"
 };
 #endif
 
