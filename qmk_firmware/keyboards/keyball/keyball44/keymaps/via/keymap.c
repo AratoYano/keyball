@@ -54,16 +54,18 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 // clang-format on
 
 #ifdef COMBO_ENABLE
-const uint16_t PROGMEM nm_macro0_combo[]    = {KC_N, KC_M, COMBO_END};
-const uint16_t PROGMEM jk_macro1_combo[]    = {KC_J, KC_K, COMBO_END};
-const uint16_t PROGMEM kl_macro2_combo[]    = {KC_K, KC_L, COMBO_END};
-const uint16_t PROGMEM mcomma_slash_combo[] = {KC_M, KC_COMM, COMBO_END};
+const uint16_t PROGMEM nm_macro0_combo[]     = {KC_N, KC_M, COMBO_END};
+const uint16_t PROGMEM ui_macro1_combo[]     = {KC_U, KC_I, COMBO_END};
+const uint16_t PROGMEM io_macro2_combo[]     = {KC_I, KC_O, COMBO_END};
+const uint16_t PROGMEM mcomma_slash_combo[]  = {KC_M, KC_COMM, COMBO_END};
+const uint16_t PROGMEM op_macro3_combo[]     = {KC_O, KC_P, COMBO_END};
 
 combo_t key_combos[] = {
     COMBO(nm_macro0_combo,     QK_MACRO_0), // Remap Macro 0
-    COMBO(jk_macro1_combo,     QK_MACRO_1), // Remap Macro 1
-    COMBO(kl_macro2_combo,     QK_MACRO_2), // Remap Macro 2
+    COMBO(ui_macro1_combo,     QK_MACRO_1), // Remap Macro 1
+    COMBO(io_macro2_combo,     QK_MACRO_2), // Remap Macro 2
     COMBO(mcomma_slash_combo,  KC_SLSH),    // "/"
+    COMBO(op_macro3_combo,     QK_MACRO_3), // Remap Macro 3
 };
 #endif
 
