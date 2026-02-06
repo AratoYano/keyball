@@ -59,7 +59,7 @@ const uint16_t PROGMEM ui_macro1_combo[]     = {KC_U, KC_I, COMBO_END};
 const uint16_t PROGMEM io_macro2_combo[]     = {KC_I, KC_O, COMBO_END};
 const uint16_t PROGMEM mcomma_slash_combo[]  = {KC_M, KC_COMM, COMBO_END};
 const uint16_t PROGMEM op_macro3_combo[]     = {KC_O, KC_P, COMBO_END};
-const uint16_t PROGMEM lenter_scln_combo[]   = {KC_L, LT(2,KC_ENT), COMBO_END};
+const uint16_t PROGMEM lenter_scln_combo[] = {KC_L, KC_ENT, COMBO_END};
 
 combo_t key_combos[] = {
     COMBO(nm_macro0_combo,     QK_MACRO_0),
