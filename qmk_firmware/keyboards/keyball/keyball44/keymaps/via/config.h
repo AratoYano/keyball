@@ -20,14 +20,6 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 #pragma once
 
-// すでに定義されているプロトコル番号を一度解除してから、0x000Eを定義し直します
-#undef VIA_PROTOCOL_VERSION
-#define VIA_PROTOCOL_VERSION 0x000E
-
-#define VIA_EEPROM_LAYOUT_OPTIONS_SIZE 2
-#define COMBO_COUNT 8
-#define COMBO_TERM 50
-
 #ifdef RGBLIGHT_ENABLE
 //#    define RGBLIGHT_EFFECT_BREATHING
 //#    define RGBLIGHT_EFFECT_RAINBOW_MOOD
