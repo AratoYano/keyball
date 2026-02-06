@@ -11,4 +11,3 @@ COMMAND_ENABLE = no
 
 # コンボ機能を有効化
 COMBO_ENABLE = yes
-VIA_COMBO_ENABLE = yes
