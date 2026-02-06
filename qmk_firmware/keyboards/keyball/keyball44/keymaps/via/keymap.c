@@ -53,6 +53,20 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 };
 // clang-format on
 
+#ifdef COMBO_ENABLE
+const uint16_t PROGMEM nm_macro0_combo[]    = {KC_N, KC_M, COMBO_END};
+const uint16_t PROGMEM jk_macro1_combo[]    = {KC_J, KC_K, COMBO_END};
+const uint16_t PROGMEM kl_macro2_combo[]    = {KC_K, KC_L, COMBO_END};
+const uint16_t PROGMEM mcomma_slash_combo[] = {KC_M, KC_COMM, COMBO_END};
+
+combo_t key_combos[] = {
+    COMBO(nm_macro0_combo,     QK_MACRO_0), // Remap Macro 0
+    COMBO(jk_macro1_combo,     QK_MACRO_1), // Remap Macro 1
+    COMBO(kl_macro2_combo,     QK_MACRO_2), // Remap Macro 2
+    COMBO(mcomma_slash_combo,  KC_SLSH),    // "/"
+};
+#endif
+
 layer_state_t layer_state_set_user(layer_state_t state) {
     // Auto enable scroll mode when the highest layer is 3
     keyball_set_scroll_mode(get_highest_layer(state) == 3);
@@ -69,11 +83,16 @@ void oledkit_render_info_user(void) {
     keyball_oled_render_layerinfo();
 }
 
-#ifdef COMBO_ENABLE
-// Remapで設定する場合でも、ビルドを通すために最低1つの定義が必要です
-const uint16_t PROGMEM dummy_combo[] = {KC_NO, KC_NO, COMBO_END};
-combo_t key_combos[] = {
-    COMBO(dummy_combo, KC_NO),
-};
+
 #endif
+
+#ifdef COMBO_ENABLE
+bool combo_should_trigger(uint16_t combo_index, combo_t *combo, uint16_t keycode, keyrecord_t *record) {
+    (void)combo_index;
+    (void)combo;
+    (void)keycode;
+    (void)record;
+    // 現在の最上位レイヤーが0のときだけ有効
+    return get_highest_layer(layer_state) == 0;
+}
 #endif
