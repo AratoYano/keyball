@@ -20,6 +20,9 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 #pragma once
 
+#define VIA_PROTOCOL_VERSION 0x000E
+#define VIA_EEPROM_LAYOUT_OPTIONS_SIZE 2
+
 #ifdef RGBLIGHT_ENABLE
 //#    define RGBLIGHT_EFFECT_BREATHING
 //#    define RGBLIGHT_EFFECT_RAINBOW_MOOD
