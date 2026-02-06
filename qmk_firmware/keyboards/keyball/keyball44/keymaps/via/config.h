@@ -37,3 +37,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 #define POINTING_DEVICE_AUTO_MOUSE_ENABLE
 #define AUTO_MOUSE_DEFAULT_LAYER 1
+// コンボの最大数を定義します（例として8個。必要に応じて増やせます）
+#define COMBO_COUNT 8
+// コンボの判定時間を調整する場合（単位：ms）
+#define COMBO_TERM 50
