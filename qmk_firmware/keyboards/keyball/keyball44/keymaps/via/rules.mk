@@ -1,13 +1,14 @@
-# Keyball固有の機能を有効にする（これでオートマウスが復活します）
+# Keyballの基本機能を有効にします（オートマウス復活のため）
 KEYBALL_ENABLE = yes
 
-# OLED（液晶）をオフにして、コンボ用の容量を確保します
-OLED_ENABLE = no
+# OLEDを物理的にオフにするのではなく、
+# 「描画処理」だけをスキップさせることで容量を空けつつエラーを回避します
+OLED_ENABLE = yes
+OLED_DRIVER_ENABLE = no
 
-# コンボ機能とRemap（VIA）連携を有効にします
+# コンボ機能とRemap連携を有効にします
 COMBO_ENABLE = yes
 VIA_COMBO_ENABLE = yes
 
-# その他の基本設定
-VIA_ENABLE = yes
-LTO_ENABLE = yes  # 容量をさらに圧縮する設定です
+# 容量圧縮のための設定
+LTO_ENABLE = yes
