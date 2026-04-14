@@ -71,8 +71,8 @@ combo_t key_combos[] = {
     COMBO(mcomma_slash_combo,  KC_SLSH),
     COMBO(op_macro3_combo,     QK_MACRO_3),
     COMBO(lenter_scln_combo,   KC_SCLN), // ";"
-    COMBO(jk_lang1_combo, KC_LNG1), // 日本語入力
-    COMBO(kl_lang2_combo, KC_LNG2), // 英数入力
+    COMBO(jk_macro4_combo, QK_MACRO_4), // 日本語入力
+    COMBO(kl_macro5_combo, QK_MACRO_5), // 英数入力
 };
 #endif
 
