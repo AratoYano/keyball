@@ -62,6 +62,8 @@ const uint16_t PROGMEM op_macro3_combo[]     = {KC_O, KC_P, COMBO_END};
 const uint16_t PROGMEM lenter_scln_combo[] = {KC_L, KC_ENT, COMBO_END};
 const uint16_t PROGMEM jk_macro4_combo[] = {KC_J, LT(3, KC_K), COMBO_END};
 const uint16_t PROGMEM kl_macro5_combo[] = {LT(3, KC_K), KC_L, COMBO_END};
+const uint16_t PROGMEM sd_ctrl_left_combo[] = {KC_S, KC_D, COMBO_END};
+const uint16_t PROGMEM df_ctrl_right_combo[] = {KC_D, LT(2, KC_F), COMBO_END};
 
 
 combo_t key_combos[] = {
@@ -73,6 +75,8 @@ combo_t key_combos[] = {
     COMBO(lenter_scln_combo,   KC_SCLN), // ";"
     COMBO(jk_macro4_combo, QK_MACRO_4), // 日本語入力
     COMBO(kl_macro5_combo, QK_MACRO_5), // 英数入力
+    COMBO(sd_ctrl_left_combo, C(KC_LEFT)),
+    COMBO(df_ctrl_right_combo, C(KC_RGHT)),
 };
 #endif
 
