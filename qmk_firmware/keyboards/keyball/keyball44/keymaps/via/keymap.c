@@ -71,7 +71,7 @@ combo_t key_combos[] = {
     COMBO(ui_macro1_combo,     QK_MACRO_1),
     COMBO(io_macro2_combo,     QK_MACRO_2),
     COMBO(mcomma_slash_combo,  KC_SLSH),
-    COMBO(op_macro3_combo,     KC_DEL),
+    COMBO(op_macro3_combo,     KC_BS),
     COMBO(lenter_scln_combo,   KC_SCLN), // ";"
     COMBO(jk_macro4_combo, QK_MACRO_4), // 日本語入力
     COMBO(kl_macro5_combo, QK_MACRO_5), // 英数入力
